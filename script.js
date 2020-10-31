@@ -1,23 +1,36 @@
 $(document).ready(function() { 
     console.log(moment().format());
     console.log(moment().hours());
-
-    console.log("Test", currentDayAndTime);
+    let currentHour = (moment().hours());
+//Header element to add day, date and time.
     $("#currentDayAndTime").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
-    function hourReady() {
-        let headerTime = moment().hours();    
+    //The Function that changes blocks to the appropriate color
+   
+    function hourReady() {  
         //for each loops
         $(".time-block").each(function() {
             let blockHour = parseInt($(this).attr("id"));
-            //conditionals for color coding .past .future
+            if(blockHour < currentHour) {
+                $("#" + blockHour).addClass("past");
+            }
+
+            if(blockHour === currentHour) {
+                $("#" + blockHour).addClass("present");
+            }
+            
+            if(blockHour > currentHour) {
+                $("#" + blockHour).addClass("future");
+            }
+        
         })
-    }
-}) 
+    } hourReady()
+    
+
+
 
 //Save button times
 //text input
-//current hour
-//block hours
-//header element to append actual time
-//moment.hours, you can reference the id on the calendar row and directly compare it to the moment.hours
+
+}) 
+
