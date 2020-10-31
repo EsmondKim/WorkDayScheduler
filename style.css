@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -28,12 +28,13 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -68,4 +69,21 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.rectangle {
+  height: 75px;
+  width: 1030px;
+  border-style: solid;
+  border-radius: 15px;
+  float: right;
+  background-color: #77dd77;
+}
+
+.square{
+  height: 75px;
+  width: 75px;
+  border-style: solid;
+  border-color: gray;
+  float: left;
 }
