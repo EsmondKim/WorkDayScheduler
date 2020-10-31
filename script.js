@@ -9,22 +9,26 @@ $(document).ready(function() {
    
     function hourReady() {  
         //for each loops
-        $(".time-block").each(function() {
+        $(".time-block").each(function() {            
             let blockHour = parseInt($(this).attr("id"));
+            let blockHourVariable = "#blockHourVariable" + parseInt($(this).attr("id"));
+            console.log(blockHourVariable);
             if(blockHour < currentHour) {
-                $("#" + blockHour).addClass("past");
+                $(blockHourVariable).addClass("past");
             }
 
             if(blockHour === currentHour) {
-                $("#" + blockHour).addClass("present");
+                $(blockHourVariable).addClass("present");
             }
             
             if(blockHour > currentHour) {
-                $("#" + blockHour).addClass("future");
+                $(blockHourVariable).addClass("future");
             }
         
         })
     } hourReady()
+
+    
     
 
 
