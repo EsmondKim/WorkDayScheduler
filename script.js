@@ -2,9 +2,7 @@ $(document).ready(function() {
     console.log(moment().format());
     console.log(moment().hours());
     let currentHour = (moment().hours());
-    let sixteenText = $("#blockHourVariable16").val();
-    let sixteenAppointment = ("sixteen", sixteenText);
-  
+    
     //Header element to add day, date and time.
     $("#currentDayAndTime").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
@@ -31,15 +29,12 @@ $(document).ready(function() {
 
     //Function to write appointments to local memory.
     $("#nineButton").click(function() {
-        $(textarea.blockHourVariable16).text(".blockHourVariable16")
-        window.localStorage.setItem(nineAppointment, JSON.stringify("blockHourVariable9").text)
-    })
+        window.localStorage.setItem("nine", JSON.stringify($("#blockHourVariable9").val()))
+        })
 
     $("#sixteenButton").on("click", function() {
-        console.log("test");
-        window.localStorage.setItem("sixteen", JSON.stringify(sixteenAppointment));
-        console.log(sixteenText)
-        console.log(sixteenAppointment);
+        window.localStorage.setItem("sixteen", JSON.stringify($("#blockHourVariable16").val()));
+        console.log($("#blockHourVariable16").val());
         })
 
     
