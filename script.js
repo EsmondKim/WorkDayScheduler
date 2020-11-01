@@ -32,12 +32,37 @@ $(document).ready(function() {
         window.localStorage.setItem("nine", JSON.stringify($("#blockHourVariable9").val()))
         })
 
-    $("#sixteenButton").on("click", function() {
-        window.localStorage.setItem("sixteen", JSON.stringify($("#blockHourVariable16").val()));
-        console.log($("#blockHourVariable16").val());
+    $("#tenButton").click(function() {
+        window.localStorage.setItem("ten", JSON.stringify($("#blockHourVariable10").val()))
+        })
+        
+    $("#elevenButton").click(function() {
+        window.localStorage.setItem("eleven", JSON.stringify($("#blockHourVariable11").val()))
+        })
+    
+    $("#twelveButton").click(function() {
+        window.localStorage.setItem("twelve", JSON.stringify($("#blockHourVariable12").val()))
+        })    
+
+    $("#thirteenButton").click(function() {
+        window.localStorage.setItem("thirteen", JSON.stringify($("#blockHourVariable13").val()))
         })
 
-    
+    $("#fourteenButton").click(function() {
+        window.localStorage.setItem("fourteen", JSON.stringify($("#blockHourVariable14").val()))
+        })
+
+    $("#fifteenButton").click(function() {
+        window.localStorage.setItem("fifteen", JSON.stringify($("#blockHourVariable15").val()))
+        })
+
+    $("#sixteenButton").on("click", function() {
+        window.localStorage.setItem("sixteen", JSON.stringify($("#blockHourVariable16").val()));
+        })
+
+    $("#seventeenButton").click(function() {
+        window.localStorage.setItem("seventeen", JSON.stringify($("#blockHourVariable17").val()))
+        })
 
 }) 
 
