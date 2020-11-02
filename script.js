@@ -67,10 +67,30 @@ $(document).ready(function() {
     function getFromLocalStorage() {
         let blockHourNineVal = JSON.parse(window.localStorage.getItem("nine"));
         $("#blockHourVariable9").text(blockHourNineVal);
+
+        let blockHourTenVal = JSON.parse(window.localStorage.getItem("ten"));
+        $("#blockHourVariable10").text(blockHourTenVal);
+
+        let blockHourElevenVal = JSON.parse(window.localStorage.getItem("eleven"));
+        $("#blockHourVariable11").text(blockHourElevenVal);
+
+        let blockHourTwelveVal = JSON.parse(window.localStorage.getItem("twelve"));
+        $("#blockHourVariable12").text(blockHourTwelveVal);
+
+        let blockHourThirteenVal = JSON.parse(window.localStorage.getItem("thirteen"));
+        $("#blockHourVariable13").text(blockHourThirteenVal);
+
+        let blockHourFourteenVal = JSON.parse(window.localStorage.getItem("fourteen"));
+        $("#blockHourVariable14").text(blockHourFourteenVal);
+
+        let blockHourFifteenVal = JSON.parse(window.localStorage.getItem("fifteen"));
+        $("#blockHourVariable15").text(blockHourFifteenVal);
+
+        let blockHourSixteenVal = JSON.parse(window.localStorage.getItem("sixteen"));
+        $("#blockHourVariable16").text(blockHourSixteenVal);
+
+        let blockHourSeventeenVal = JSON.parse(window.localStorage.getItem("seventeen"));
+        $("#blockHourVariable17").text(blockHourSeventeenVal);
         } getFromLocalStorage();
-
-
-
-
 
 }) 
