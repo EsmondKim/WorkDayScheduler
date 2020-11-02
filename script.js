@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+$(document).ready(function() {   
     console.log(moment().format());
     console.log(moment().hours());
     let currentHour = (moment().hours());
@@ -64,5 +64,13 @@ $(document).ready(function() {
         window.localStorage.setItem("seventeen", JSON.stringify($("#blockHourVariable17").val()))
         })
 
-}) 
+    function getFromLocalStorage() {
+        let blockHourNineVal = JSON.parse(window.localStorage.getItem("nine"));
+        $("#blockHourVariable9").text(blockHourNineVal);
+        } getFromLocalStorage();
 
+
+
+
+
+}) 
