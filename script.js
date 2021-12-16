@@ -16,15 +16,15 @@ $(document).ready(function () {
       let blockHourVariable =
         "#blockHourVariable" + parseInt($(this).attr("id"));
       if (blockHour < currentHour) {
-        $(blockHourVariable).addClass("past");
+        $(blockHourVariable).addClass("event-past");
       }
 
       if (blockHour === currentHour) {
-        $(blockHourVariable).addClass("present");
+        $(blockHourVariable).addClass("event-present");
       }
 
       if (blockHour > currentHour) {
-        $(blockHourVariable).addClass("future");
+        $(blockHourVariable).addClass("event-future");
       }
     });
   }
