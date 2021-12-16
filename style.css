@@ -13,6 +13,25 @@ body {
   border-bottom: 10px solid black;
 }
 
+.box {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.legend-past {
+  background-color: #f0efeb;
+}
+
+.legend-present {
+  background-color: #f2cc8f;
+}
+
+.legend-future {
+  background-color: #81b29a;
+}
+
 .button {
   width: 100%;
   padding-top: 10px;
@@ -62,11 +81,6 @@ body {
   background-color: #81b29a;
   color: black;
 }
-
-/* delete all description class references in HTML
-.description {
-  white-space: pre-wrap;
-} */
 
 .time-block {
   text-align: center;
